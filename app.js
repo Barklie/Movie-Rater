@@ -36,11 +36,7 @@ $('form').on('submit', function(e){
 
     console.log(movies)
 
-    // $('ul').on('click', '.rmvBtn', function(e) {
-    //   e.preventDefault();
-    //   console.log('click');
-    //   $(this).parent().remove();
-    // });
+
 
     $('input').eq(0).val("")
     $('input').eq(1).val(0)
@@ -52,10 +48,7 @@ $('#alphabet').on('click', function(e){
     $('li').remove()
     $('.rmvBtn').remove()
 
-    // $('ul').on('click', '.rmvBtn', function(e) {
-    //   console.log('click');
-    //   $(this).parent().remove();
-    // });
+
 
     movies.sort((a, b) => {
   
@@ -85,10 +78,7 @@ $('#rating').on('change', function(e){
     $('li').remove()
     $('.rmvBtn').remove()
 
-    // $('ul').on('click', '.rmvBtn', function(e) {
-    //   console.log('click');
-    //   $(this).parent().remove();
-    // });
+
 
     movies.sort((a, b) => b.rating - a.rating);
   
@@ -103,20 +93,6 @@ $('#rating').on('change', function(e){
   }
 
 })
-
-// document.addEventListener('click', function(event) {
-//   // const button = document.getElementById('remove-btn');
-//   // Check if the clicked element is the newButton
-//   //button.style watches entire document
-//   //add event listener to button in form event listener
-//   if (event.target.matches('button.rmvBtn')) {
-//     console.log('Remove Button clicked!');
-//       event.target.parentElement.remove()
-
-//     // Remove the div element from the DOM
-//   //   div.remove();
-//   }
-// });
 
     $('ul').on('click', '.rmvBtn', function(e) {
       console.log('click');
