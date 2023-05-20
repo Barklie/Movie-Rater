@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Rater</title>
+    <h1>Movie Ratings List</h1>
+</head>
+<body>
+    <div id="div-container">
+        <form action="submit">
+            <label for="movie-title">Movie Title:</label>
+            <input type="text" name="Movie Titile" id="movie-title" pattern=".{2,}" required>
+
+            <label for="movie-rating">Movie Rating:</label>
+            <input type="range" min="0" max="10" step="1" value="0" name="Movie Rating" id="movie-rating">
+            <span id="range-value">0</span>
+
+            <button class="sub-btn" type="submit">Submit</button>
+
+        </form>
+    </div>
+
+    <div id="checkbox-div">
+        <label for="alphabet">Sort alphabetically</label>
+        <input type="checkbox" id="alphabet">
+        <label for="rating">Sort by rating</label>
+        <input type="checkbox" name="rating" id="rating">
+    </div>
+
+    <div id="ul-container">
+        <ul id="movie-ul">
+
+        </ul>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
